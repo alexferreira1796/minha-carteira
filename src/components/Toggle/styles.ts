@@ -5,6 +5,9 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  > span {
+    color: ${props => props.theme.colors.white};
+  }
 `
 export const ToogleSelector = styled(Switch).attrs<ReactSwitchProps>(
   (props) => ({
